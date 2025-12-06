@@ -40,7 +40,7 @@ const MENU_ITEMS: CardData[] = [
     {
         id: "main",
         title: "Main: Full-course Platforms",
-        items: ["₹35,000-40,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2 reels"],
+        items: ["+ ₹10,000-15,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2 reels"],
         hoverColor: "pink",
         icon: "🍔",
         delay: 0.2,
@@ -59,7 +59,7 @@ const MENU_ITEMS: CardData[] = [
     {
         id: "dessert",
         title: "Dessert: Loyalty & Add-ons",
-        items: ["₹55,000-60,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2-3 reels"],
+        items: ["+ ₹30,000-35,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2-3 reels"],
         hoverColor: "cyan",
         icon: "🍦",
         delay: 0.3,
@@ -124,7 +124,7 @@ const TypewriterText = ({ text }: { text: string }) => {
                 <motion.span
                     variants={child}
                     key={index}
-                    className={`font-display text-[46px] md:text-[50px] text-cream leading-tight ${letter === " " ? "md:w-full md:h-0" : ""}`}
+                    className={`font-display text-[44.5px] md:text-[50px] text-cream leading-tight ${letter === " " ? "md:w-full md:h-0" : ""}`}
                 >
                     {letter === " " ? "\u00A0" : letter}
                 </motion.span>
@@ -243,7 +243,7 @@ export default function MenuCards() {
     const [selectedCard, setSelectedCard] = useState<CardData | null>(null);
 
     return (
-        <section className="min-h-screen bg-eggplant py-20 px-6 md:px-20 relative overflow-hidden flex items-center">
+        <section className="min-h-screen bg-eggplant py-20 px-6 md:px-10 lg:px-20 relative overflow-hidden flex items-center">
             {/* Animated Checkerboard pattern */}
             <motion.div
                 className="absolute inset-0 opacity-5 pointer-events-none"

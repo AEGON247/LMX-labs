@@ -3,6 +3,7 @@ import { Fredoka, Outfit } from "next/font/google";
 import "./globals.css";
 import Cursor from "@/components/Cursor";
 import SplashLoader from "@/components/SplashLoader";
+import SecurityWrapper from "@/components/SecurityWrapper";
 import Navbar from "@/components/Navbar";
 
 const fredoka = Fredoka({
@@ -32,10 +33,12 @@ export default function RootLayout({
       <body
         className={`${fredoka.variable} ${outfit.variable} antialiased`}
       >
-        <SplashLoader />
-        <Cursor />
-        <Navbar />
-        {children}
+        <SecurityWrapper>
+          <SplashLoader />
+          <Cursor />
+          <Navbar />
+          {children}
+        </SecurityWrapper>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export default function ProcessSteps() {
 
     const steps = [
         { title: "Order in", desc: "You tell us your story, share your menu and vibe.", icon: "🥡" },
-        { title: "We marinate", desc: "We design, prototype, test with your staff and regulars.", icon: "🍲" },
+        { title: "We marinate", desc: "We design, and test with your staff and regulars.", icon: "🍲" },
         { title: "You serve", desc: "We launch fast, connect your tools, stay on call.", icon: "🍽️" },
     ];
 
@@ -86,7 +86,7 @@ function StepCard({ step, index }: { step: { title: string, desc: string, icon: 
                 initial={{ opacity: 0.5, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ margin: "-50% 0px -50% 0px" }} // Highlight text when center
-                className={`w-full md:w-1/2 text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}
+                className={`w-full md:w-1/2 text-center flex flex-col items-center md:block ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}
             >
                 <h3 className="font-display text-4xl text-eggplant mb-4">{step.title}</h3>
                 <p className="font-body text-xl text-brown">{step.desc}</p>

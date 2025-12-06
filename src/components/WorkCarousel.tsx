@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 
 const projects = [
-    { id: 1, title: "Burger Kingz", category: "Restaurants", url: "https://kunafa-house-vellore.web.app", color: "mango" },
-    { id: 2, title: "Sushi Su", category: "Restaurants", url: "https://temptations.vercel.app", color: "pink" },
+    { id: 1, title: "Kunafa House", category: "Restaurants", url: "https://kunafa-house-vellore.web.app", color: "mango" },
+    { id: 2, title: "Temptations", category: "Restaurants", url: "https://temptations.vercel.app", color: "pink" },
     { id: 3, title: "Bean There", category: "Cafes", url: "https://en.wikipedia.org/wiki/Coffee", color: "mint" },
     { id: 4, title: "Dough Co.", category: "Bakeries", url: "https://en.wikipedia.org/wiki/Doughnut", color: "cyan" },
 ];
@@ -33,7 +33,7 @@ export default function WorkCarousel() {
                     {projects.map((project) => (
                         <motion.div
                             key={project.id}
-                            className="relative w-[85vw] md:w-[800px] h-[60vh] md:h-[600px] flex-shrink-0 snap-center group"
+                            className="relative w-[85vw] md:w-[90vw] lg:w-[800px] h-[60vh] md:h-[600px] flex-shrink-0 snap-center group"
                             whileHover={{ scale: 0.98 }}
                             transition={{ duration: 0.5 }}
                         >

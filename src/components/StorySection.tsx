@@ -13,23 +13,21 @@ export default function StorySection() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Only run GSAP animation on desktop
-            if (window.matchMedia("(min-width: 768px)").matches) {
-                const storiesCount = 4; // We know there are 4 stories
+            // Run GSAP animation on all devices (mobile + desktop)
+            const storiesCount = 4; // We know there are 4 stories
 
-                gsap.to(trackRef.current, {
-                    xPercent: -100 * (storiesCount - 1) / storiesCount, // Move by 75% of the 400vw width
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: sectionRef.current,
-                        pin: true,
-                        scrub: 1,
-                        snap: 1 / (storiesCount - 1),
-                        end: () => "+=" + (sectionRef.current?.offsetWidth || window.innerWidth) * (storiesCount - 1),
-                        invalidateOnRefresh: true,
-                    },
-                });
-            }
+            gsap.to(trackRef.current, {
+                xPercent: -100 * (storiesCount - 1) / storiesCount, // Move by 75% of the 400vw width
+                ease: "none",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    pin: true,
+                    scrub: 1,
+                    snap: 1 / (storiesCount - 1),
+                    end: () => "+=" + (sectionRef.current?.offsetWidth || window.innerWidth) * (storiesCount - 1),
+                    invalidateOnRefresh: true,
+                },
+            });
         }, sectionRef);
 
         return () => ctx.revert();
@@ -63,7 +61,7 @@ export default function StorySection() {
     ];
 
     return (
-        <section ref={sectionRef} className="w-full h-screen overflow-x-auto md:overflow-hidden relative snap-x snap-mandatory md:snap-none hide-scrollbar">
+        <section ref={sectionRef} className="w-full h-screen overflow-hidden relative hide-scrollbar">
             <div
                 ref={trackRef}
                 className="w-[400vw] h-full flex flex-row flex-nowrap"
