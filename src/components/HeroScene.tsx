@@ -20,7 +20,7 @@ function Laptop() {
             {/* Screen Frame */}
             <mesh position={[0, 0.6, -1]} rotation={[-0.3, 0, 0]}>
                 <boxGeometry args={[3, 2, 0.1]} />
-                <meshStandardMaterial color="#1B0625" roughness={0.2} />
+                <meshStandardMaterial color="#E3E3E3" roughness={0.2} />{/*old colour: */}
             </mesh>
             {/* Screen Content - Logo */}
             <mesh position={[0, 0.6, -0.94]} rotation={[-0.3, 0, 0]}>
