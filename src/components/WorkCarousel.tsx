@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const projects = [
     { id: 1, title: "Kunafa House", category: "Restaurants", url: "https://kunafa-house-vellore.web.app", color: "mango" },
     { id: 2, title: "Temptations", category: "Restaurants", url: "https://temptations.vercel.app", color: "pink" },
-    { id: 3, title: "Bean There", category: "Cafes", url: "https://en.wikipedia.org/wiki/Coffee", color: "mint" },
-    { id: 4, title: "Dough Co.", category: "Bakeries", url: "https://en.wikipedia.org/wiki/Doughnut", color: "cyan" },
+    { id: 3, title: "Sanjana Gourmet", category: "Cafes", url: "https://sanjana-gourmet-site.vercel.app", color: "mint" },
+    { id: 4, title: "Kunafa Admin", category: "Bakeries", url: "https://kunafa-admin.web.app", color: "cyan" },
 ];
 
 export default function WorkCarousel() {

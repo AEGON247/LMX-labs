@@ -48,10 +48,10 @@ export default function Footer() {
                         <div className="flex flex-col items-end text-right font-body text-lg">
                             <div className="flex gap-8 mb-2">
                                 <a href="https://www.instagram.com/lmx.labs?igsh=em9pdm8zYW5kOW4w" className="hover:text-mango transition-colors" data-cursor="link">Instagram</a>
-                                <a href="#" className="hover:text-mango transition-colors" data-cursor="link">Twitter</a>
+                                <a href="https://www.linkedin.com/company/lmx-labs" className="hover:text-mango transition-colors" data-cursor="link">Linkedin</a>
                                 <a href="mailto:lmxlabstoyou@gmail.com" className="hover:text-mango transition-colors" data-cursor="link">Email</a>
                             </div>
-                            <div className="text-sm text-cream/60">Contact CEO directly @: +91 94560 11059</div>
+                            <div className="text-sm text-cream/60">Contact CEO directly @: +91 94560 11059 (Whatsapp)</div>
                         </div>
                     </div>
                 </div>
