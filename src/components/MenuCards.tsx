@@ -21,7 +21,7 @@ const MENU_ITEMS: CardData[] = [
     {
         id: "starter",
         title: "Starter: Spicy Landing Pages",
-        items: ["₹25,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 5 posts + 1 reel"],
+        items: ["₹25,999 One-time website", "₹5,000 Monthly from 2nd month", "FREE 5 posts + 1 reel"],
         hoverColor: "mango",
         icon: "🌶️",
         delay: 0.1,
@@ -40,7 +40,7 @@ const MENU_ITEMS: CardData[] = [
     {
         id: "main",
         title: "Main: Full-course Platforms",
-        items: ["+ ₹10,000-15,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2 reels"],
+        items: ["+ ₹14,999 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2 reels"],
         hoverColor: "pink",
         icon: "🍔",
         delay: 0.2,
@@ -59,7 +59,7 @@ const MENU_ITEMS: CardData[] = [
     {
         id: "dessert",
         title: "Dessert: Loyalty & Add-ons",
-        items: ["+ ₹30,000-35,000 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2-3 reels"],
+        items: ["+ ₹34,999 One-time website", "₹5,000 Monthly from 2nd month", "FREE 8 posts + 2-3 reels"],
         hoverColor: "cyan",
         icon: "🍦",
         delay: 0.3,
@@ -67,7 +67,7 @@ const MENU_ITEMS: CardData[] = [
             heading: "Premium Loyalty & Add-on Suite",
             features: [
                 "Premium Website + Online Payments",
-                "SEO Optimisation and Improved Visibility",
+                "Clever and cute notifications",
                 "User Authentication & Profiles",
                 "High level animations",
                 "Upto 3 prototypes before final deployment",
